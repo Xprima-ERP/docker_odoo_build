@@ -1,4 +1,4 @@
-FROM maxc0c0s/odoo-deps
+FROM maxc0c0s/odoo-deps:1.8.5
 MAINTAINER Sebastien Delisle <seb0del@gmail.com>
 
 RUN apt-get install -y git
