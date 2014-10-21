@@ -3,7 +3,7 @@ MAINTAINER Sebastien Delisle <seb0del@gmail.com>
 
 RUN apt-get install -y git
 
-RUN git clone https://github.com/maxc0c0s/anybox_buildout_odoo_7 /odoo_server
+RUN git clone -b 7.0 https://github.com/maxc0c0s/anybox_buildout_odoo.git /odoo_server
 
 WORKDIR /odoo_server
 RUN python bootstrap.py
