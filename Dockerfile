@@ -7,4 +7,4 @@ RUN git clone -b 7.0 https://github.com/maxc0c0s/anybox_buildout_odoo.git /odoo_
 
 WORKDIR /odoo_server
 RUN python bootstrap.py
-RUN bin/buildout -c frozen.cfg
+RUN bin/buildout
