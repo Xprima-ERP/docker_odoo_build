@@ -3,8 +3,8 @@ MAINTAINER Sebastien Delisle <seb0del@gmail.com>
 
 RUN apt-get install -y git
 
-RUN git clone -b odoo_70_ar_186 https://github.com/Xprima-ERP/anybox_buildout_odoo.git /odoo_server
+RUN git clone -b odoo_80_ar_191 https://github.com/Xprima-ERP/anybox_buildout_odoo.git /odoo_server
 
 WORKDIR /odoo_server
-RUN python bootstrap.py
+RUN python bootstrap-buildout.py
 RUN bin/buildout -c init_versions.cfg
